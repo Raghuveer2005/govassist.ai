@@ -1,16 +1,22 @@
 const mysql = require('mysql2/promise');
 require('dotenv').config();
 
-const pool = mysql.createPool({
+const poolConfig = {
   host: process.env.DB_HOST || 'localhost',
-  port: process.env.DB_PORT || 3306,
+  port: Number(process.env.DB_PORT) || 3306,
   user: process.env.DB_USER || 'root',
   password: process.env.DB_PASSWORD || 'raghuveer',
   database: process.env.DB_NAME || 'govassist_ai',
   waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0,
-});
+};
+
+if (process.env.DB_SSL === 'true' || process.env.MYSQL_SSL === 'true' || process.env.NODE_ENV === 'production') {
+  poolConfig.ssl = { rejectUnauthorized: false };
+}
+
+const pool = mysql.createPool(poolConfig);
 
 // Helper to verify DB connectivity and auto-create required tables
 async function testConnection() {
@@ -90,6 +96,7 @@ async function testConnection() {
         description TEXT NOT NULL,
         category VARCHAR(100) NOT NULL,
         eligibility_criteria JSON NOT NULL,
+        application_url VARCHAR(500) DEFAULT '',
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
       )
     `);
