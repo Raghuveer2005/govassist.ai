@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to GovAssist AI! 🎉</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: #f8fafc;
+      color: #0f172a;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    .email-wrapper {
+      width: 100%;
+      background-color: #f8fafc;
+      padding: 32px 12px;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    }
+    .header {
+      background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
+      padding: 32px 24px;
+      text-align: center;
+      color: #ffffff;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    .header p {
+      margin: 6px 0 0;
+      font-size: 14px;
+      opacity: 0.92;
+    }
+    .content {
+      padding: 32px 28px;
+      line-height: 1.65;
+    }
+    .greeting {
+      font-size: 18px;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 16px;
+    }
+    .text-body {
+      font-size: 15px;
+      color: #334155;
+      margin: 12px 0;
+    }
+    .features-card {
+      background-color: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 24px 0;
+    }
+    .features-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 14px;
+    }
+    .feature-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .feature-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 12px;
+      font-size: 14px;
+      color: #334155;
+      line-height: 1.5;
+    }
+    .feature-item:last-child {
+      margin-bottom: 0;
+    }
+    .feature-icon {
+      font-size: 18px;
+      margin-right: 12px;
+      flex-shrink: 0;
+      line-height: 1.2;
+    }
+    .feature-text {
+      flex: 1;
+    }
+    .btn-container {
+      text-align: center;
+      margin: 28px 0;
+    }
+    .btn {
+      background-color: #2563eb;
+      color: #ffffff !important;
+      text-decoration: none;
+      padding: 14px 32px;
+      font-size: 15px;
+      font-weight: 600;
+      border-radius: 10px;
+      display: inline-block;
+      box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.25);
+    }
+    .btn:hover {
+      background-color: #1d4ed8;
+    }
+    .note-box {
+      background-color: #f1f5f9;
+      border-left: 4px solid #94a3b8;
+      border-radius: 6px;
+      padding: 14px 16px;
+      margin: 24px 0 20px;
+      font-size: 13px;
+      color: #64748b;
+      line-height: 1.5;
+    }
+    .signature {
+      margin-top: 28px;
+      padding-top: 20px;
+      border-top: 1px solid #e2e8f0;
+      font-size: 14px;
+      color: #334155;
+      line-height: 1.5;
+    }
+    .signature-title {
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .signature-tagline {
+      font-size: 13px;
+      color: #64748b;
+    }
+    .footer {
+      background-color: #f8fafc;
+      padding: 20px 24px;
+      text-align: center;
+      font-size: 12px;
+      color: #94a3b8;
+      border-top: 1px solid #e2e8f0;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="email-wrapper">
+    <div class="container">
+      <div class="header">
+        <h1>GovAssist AI</h1>
+        <p>Smart Help. Simplified Governance.</p>
+      </div>
+      <div class="content">
+        <div class="greeting">Hi {{name}},</div>
+        
+        <p class="text-body">
+          Welcome to GovAssist AI — your personalized gateway to discovering government schemes that may be relevant to you.
+        </p>
+        
+        <p class="text-body">
+          Based on the information you provide, GovAssist AI helps you find government schemes you may be eligible for and understand them in simple, easy-to-read language. Our AI-powered system can also explain why a particular scheme may be relevant to your profile.
+        </p>
+
+        <div class="features-card">
+          <div class="features-title">With GovAssist AI, you can:</div>
+          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+              <td style="padding-bottom: 10px; font-size: 14px; color: #334155;">
+                <span style="font-size: 16px; margin-right: 8px;">🔎</span> Discover government schemes based on your profile
+              </td>
+            </tr>
+            <tr>
+              <td style="padding-bottom: 10px; font-size: 14px; color: #334155;">
+                <span style="font-size: 16px; margin-right: 8px;">🤖</span> Get AI-powered explanations of schemes and their benefits
+              </td>
+            </tr>
+            <tr>
+              <td style="padding-bottom: 10px; font-size: 14px; color: #334155;">
+                <span style="font-size: 16px; margin-right: 8px;">👤</span> Manage your personal profile and eligibility information
+              </td>
+            </tr>
+            <tr>
+              <td style="padding-bottom: 10px; font-size: 14px; color: #334155;">
+                <span style="font-size: 16px; margin-right: 8px;">📌</span> Bookmark schemes for later
+              </td>
+            </tr>
+            <tr>
+              <td style="padding-bottom: 10px; font-size: 14px; color: #334155;">
+                <span style="font-size: 16px; margin-right: 8px;">📚</span> Browse government schemes by category
+              </td>
+            </tr>
+            <tr>
+              <td style="font-size: 14px; color: #334155;">
+                <span style="font-size: 16px; margin-right: 8px;">🔐</span> Securely manage your account
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <p class="text-body">
+          Get started by completing your profile and discovering schemes that may be relevant to you.
+        </p>
+
+        <div class="btn-container">
+          <a href="{{clientUrl}}" class="btn">Explore GovAssist AI &rarr; Visit Website</a>
+        </div>
+
+        <div class="note-box">
+          <strong>Please note:</strong> Scheme recommendations are based on the information provided and are intended for informational purposes. Please refer to the official scheme guidelines for final eligibility and application details.
+        </div>
+
+        <div class="signature">
+          Best regards,<br />
+          <span class="signature-title">Team GovAssist AI</span><br />
+          <span class="signature-tagline">Making Government Schemes Easier to Discover</span>
+        </div>
+      </div>
+      <div class="footer">
+        <p style="margin: 0 0 4px;">&copy; {{year}} GovAssist AI. All rights reserved.</p>
+        <p style="margin: 0;">AI-Powered Scheme Discovery &amp; Eligibility Guidance</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+Hi {{name}},
+
+Welcome to GovAssist AI — your personalized gateway to discovering government schemes that may be relevant to you.
+
+Based on the information you provide, GovAssist AI helps you find government schemes you may be eligible for and understand them in simple, easy-to-read language. Our AI-powered system can also explain why a particular scheme may be relevant to your profile.
+
+With GovAssist AI, you can:
+
+🔎 Discover government schemes based on your profile
+🤖 Get AI-powered explanations of schemes and their benefits
+👤 Manage your personal profile and eligibility information
+📌 Bookmark schemes for later
+📚 Browse government schemes by category
+🔐 Securely manage your account
+
+Get started by completing your profile and discovering schemes that may be relevant to you.
+
+Explore GovAssist AI → Visit Website: {{clientUrl}}
+
+Please note: Scheme recommendations are based on the information provided and are intended for informational purposes. Please refer to the official scheme guidelines for final eligibility and application details.
+
+Best regards,
+Team GovAssist AI
+Making Government Schemes Easier to Discover

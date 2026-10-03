@@ -1,0 +1,12 @@
+{
+  "name": "govassist-ai-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix backend run dev",
+    "backend": "npm --prefix backend run dev",
+    "frontend": "npm --prefix frontend run dev",
+    "update:links": "npm --prefix backend run update:links",
+    "test:email": "npm --prefix backend run test:email --"
+  }
+}

@@ -1,0 +1,338 @@
+================================================================================
+                    GOVASSIST AI - COMPLETE PROJECT ARCHITECTURE
+================================================================================
+
+This document provides a comprehensive, beginner-to-advanced explanation of the 
+entire GovAssist AI project: technologies used, file types, architecture, database 
+design, API endpoints, and file-by-file breakdown.
+
+================================================================================
+1. EXECUTIVE SUMMARY & WHAT THIS APPLICATION DOES
+================================================================================
+GovAssist AI is an intelligent citizen portal for finding Government of India schemes.
+Instead of forcing citizens to read dense legal documents:
+1. The citizen completes their profile (age, gender, state, occupation, income, education, category).
+2. The BACKEND runs 100% deterministic rule-based algorithms (evaluating JSON criteria)
+   to filter schemes the citizen ACTUALLY qualifies for.
+3. The citizen views their personalized recommendations.
+4. Google Gemini Generative AI is optionally invoked to:
+   - Explain in 2-3 friendly sentences WHY the scheme matches them.
+   - Simplify official government jargon into easy, plain English.
+*CRITICAL DESIGN PRINCIPLE*: Gemini is NEVER used to decide eligibility. Eligibility
+is 100% rule-based in Node.js for absolute reliability, security, and auditability.
+
+
+================================================================================
+2. TECHNOLOGIES & CORE CONCEPTS EXPLAINED
+================================================================================
+
+A. FRONTEND TECHNOLOGIES:
+-------------------------
+1. HTML5 (HyperText Markup Language):
+   - Found in `frontend/index.html`.
+   - Acts as the initial entry skeleton for the browser. It creates the root 
+     `<div id="root"></div>` container where React renders the entire dynamic app.
+
+2. React (v18):
+   - A modern JavaScript library for building interactive user interfaces.
+   - Instead of refreshing the full page on every click, React creates a "Single Page 
+     Application" (SPA). It uses a Virtual DOM (in-memory representation of UI) to 
+     update only the changed UI elements instantaneously.
+   - Key React Hooks Used:
+     * `useState`: Manages component-level data (e.g., form inputs, loading state, scheme list).
+     * `useEffect`: Handles side effects (e.g., fetching data from backend API on page load).
+     * `useContext`: Shares global state (like current logged-in user and token) without prop-drilling.
+     * `useNavigate`: Enables programmatic client-side routing between pages without page reload.
+
+3. JSX (JavaScript XML):
+   - Files ending in `.jsx`.
+   - A syntax extension that allows writing HTML-like code directly inside JavaScript.
+   - Enables embedding dynamic JS logic (loops `.map()`, conditionals `? :`, variables `{profile.name}`) 
+     directly within the markup.
+
+4. CSS3 & Tailwind CSS:
+   - Tailwind CSS is a utility-first CSS framework. Instead of writing separate CSS files 
+     with hundreds of custom classes, you apply predefined classes directly in JSX 
+     (e.g., `flex`, `items-center`, `bg-brand-600`, `text-slate-900`, `rounded-2xl`, `shadow-sm`).
+   - `frontend/src/index.css` defines base custom styles, background images (Ashok Stambh),
+     color palettes, and smooth animated gradient keyframes (`@keyframes recommendationsGradient`).
+
+5. Vite:
+   - A next-generation frontend build tool and development server.
+   - Replaces older tools like Webpack/Create-React-App.
+   - Uses native ES Modules (ESM) in the browser to deliver instant server start and 
+     sub-millisecond Hot Module Replacement (HMR) during development.
+   - Bundles, minifies, and optimizes production assets into `frontend/dist/`.
+
+6. Axios:
+   - A Promise-based HTTP client for making REST API calls from the React frontend 
+     to the Express backend.
+   - Configured with an interceptor (`frontend/src/api/axios.js`) to automatically 
+     attach the user's JWT Authorization Bearer header to every request.
+
+7. React Router DOM (v6):
+   - Handles client-side navigation between URLs (`/`, `/login`, `/register`, `/profile`, 
+     `/dashboard`, `/recommendations`) without browser page reload.
+
+
+B. BACKEND TECHNOLOGIES:
+------------------------
+1. Node.js:
+   - An open-source, cross-platform JavaScript runtime engine built on Chrome's V8.
+   - Enables running JavaScript outside the browser on the server with asynchronous, 
+     non-blocking I/O event loops.
+
+2. Express.js:
+   - A fast, minimalist web framework for Node.js.
+   - Provides routing (`express.Router()`), request parsing (`express.json()`), CORS 
+     handling, and middleware pipelines.
+
+3. MySQL (v8+ with `mysql2/promise`):
+   - An ACID-compliant relational database management system.
+   - Stores users, profiles, and schemes.
+   - Supports native `JSON` data types for storing complex scheme eligibility criteria.
+
+4. JWT (JSON Web Tokens) & `bcryptjs`:
+   - `bcryptjs`: Hashes passwords using one-way cryptographic salt before saving to MySQL.
+   - `jsonwebtoken`: Issues signed, tamper-proof tokens containing user ID and expiration.
+     The client sends this token in the `Authorization: Bearer <token>` header to authenticate.
+
+5. Google Gemini AI (`node-fetch` + Gemini REST API):
+   - Connected via `GEMINI_API_KEY` in `backend/.env`.
+   - Used in `backend/services/gemini.service.js` to provide contextual scheme explanations 
+     and plain-English simplifications.
+
+
+================================================================================
+3. FILE TYPES USED IN THIS REPOSITORY
+================================================================================
+- `.js`   : Standard JavaScript code (Backend controllers, routes, utilities, config).
+- `.jsx`  : React JavaScript XML files (Frontend UI components, pages, context).
+- `.json` : JavaScript Object Notation (Configurations, `package.json`, templates).
+- `.sql`  : Structured Query Language files (Database table schemas and seed data).
+- `.css`  : Cascading Style Sheets (Tailwind directives, custom classes, animations).
+- `.html` : Hypertext Markup Language (Entry point for Vite/React).
+- `.env`  : Environment variable configuration files (Database passwords, API keys, ports).
+- `.md`   : Markdown documentation files (README, architectural specs).
+- `.png` / `.jpg` : Static image assets (Logos, backgrounds).
+
+
+================================================================================
+4. DATABASE ARCHITECTURE: TABLES, KEYS & RELATIONSHIPS
+================================================================================
+
+The database is named `govassist_ai` and contains 3 primary relational tables:
+
+--------------------------------------------------------------------------------
+TABLE 1: `users` (User Authentication Table)
+--------------------------------------------------------------------------------
+Columns:
+  - `id` (INT, Auto Increment, PRIMARY KEY)
+  - `name` (VARCHAR(150), NOT NULL)
+  - `email` (VARCHAR(150), NOT NULL, UNIQUE)
+  - `password` (VARCHAR(255), NOT NULL) -> Stores one-way bcrypt hashed string
+  - `created_at` (TIMESTAMP, DEFAULT CURRENT_TIMESTAMP)
+  - `updated_at` (TIMESTAMP, DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP)
+
+--------------------------------------------------------------------------------
+TABLE 2: `profiles` (Citizen Demographic & Filter Table)
+--------------------------------------------------------------------------------
+Columns:
+  - `user_id` (INT, PRIMARY KEY, FOREIGN KEY -> users(id) ON DELETE CASCADE)
+  - `age` (INT, NOT NULL)
+  - `gender` (VARCHAR(50), NOT NULL DEFAULT 'Other') -> ['Male', 'Female', 'Transgender', 'Other']
+  - `state` (VARCHAR(100), NOT NULL) -> 29 Indian States & UTs
+  - `occupation` (VARCHAR(100), NOT NULL) -> ['Student', 'Farmer', 'Self-Employed', 'Business Owner', ...]
+  - `annual_income` (DECIMAL(12, 2), NOT NULL) -> Annual household income in INR
+  - `education` (VARCHAR(100), NOT NULL) -> ['10th Pass', '12th Pass', 'Graduate', ...]
+  - `social_category` (VARCHAR(50), NOT NULL DEFAULT 'General') -> ['General', 'OBC', 'SC', 'ST', 'EWS']
+  - `updated_at` (TIMESTAMP, DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP)
+
+Relationship:
+  - 1-to-1 Relationship with `users` (Each user has exactly one profile record).
+  - Cascade Deletion: If a user account is deleted, their profile is automatically removed.
+
+--------------------------------------------------------------------------------
+TABLE 3: `schemes` (Government Schemes Catalog Table)
+--------------------------------------------------------------------------------
+Columns:
+  - `id` (INT, Auto Increment, PRIMARY KEY)
+  - `scheme_name` (VARCHAR(200), NOT NULL)
+  - `description` (TEXT, NOT NULL)
+  - `category` (VARCHAR(100), NOT NULL) -> Indexed via `idx_schemes_category`
+  - `eligibility_criteria` (JSON, NOT NULL)
+  - `created_at` (TIMESTAMP, DEFAULT CURRENT_TIMESTAMP)
+
+The `eligibility_criteria` JSON Column Shape:
+  {
+    "min_age": 18,
+    "max_age": 60,
+    "genders": ["All"] | ["Female"] | ["Male", "Female"],
+    "states": ["All"] | ["Maharashtra", "Delhi", ...],
+    "occupations": ["All"] | ["Farmer", "Student", ...],
+    "max_income": 300000,
+    "education": ["All"] | ["10th Pass", "Graduate", ...],
+    "social_categories": ["All"] | ["SC", "ST", "OBC", "General", "EWS"]
+  }
+
+
+================================================================================
+5. HOW IMPORTANT FILES WORK (FILE-BY-FILE WALKTHROUGH)
+================================================================================
+
+A. BACKEND DIRECTORY (`backend/`):
+----------------------------------
+1. `server.js`:
+   - The application entry point.
+   - Boots Express, enables CORS and JSON body parser middleware, mounts API routes,
+     initiates database auto-connection & migration via `testConnection()`, and listens 
+     on the designated PORT (5000 / 5001).
+
+2. `config/db.js`:
+   - Creates a MySQL connection pool using `mysql2/promise`.
+   - Contains `testConnection()` which automatically verifies connection and runs
+     table migrations (creating `users`, `profiles`, `schemes` and auto-adding missing 
+     columns like `gender` and `social_category`).
+
+3. `middleware/auth.js`:
+   - JWT authentication interceptor.
+   - Extracts the `Authorization: Bearer <token>` header, verifies it with `JWT_SECRET`,
+     and attaches `req.user = { id, email }` to the request object. If missing or invalid,
+     returns HTTP 401 Unauthorized.
+
+4. `controllers/auth.controller.js`:
+   - `register`: Validates input, checks for duplicate email, hashes password with `bcryptjs`, 
+     inserts user into `users`, and returns JWT + user info.
+   - `login`: Validates credentials, checks password hash with `bcrypt.compare`, issues JWT.
+   - `getMe`: Returns current authenticated user data.
+
+5. `controllers/profile.controller.js`:
+   - `validateProfileInput`: Strict server-side validation for age (0-120), gender, state,
+     occupation, income, education, and social category.
+   - `upsertProfile`: Executes an `INSERT ... ON DUPLICATE KEY UPDATE` query to save or update
+     the user's profile in MySQL.
+   - `getProfile`: Fetches the logged-in user's profile.
+
+6. `utils/eligibility.js`:
+   - The core deterministic matching engine.
+   - Function `isEligible(profile, criteriaRaw)`: Compares user profile values against scheme 
+     criteria JSON (Age within min/max, Gender in allowed list or 'All', State in allowed list,
+     Occupation in allowed list, Income <= max_income, Education in allowed list, Category in allowed list).
+   - Function `filterEligibleSchemes(profile, schemes)`: Iterates over all schemes and filters only matches.
+
+7. `controllers/scheme.controller.js`:
+   - `ensureSchemesPopulated`: Checks if MySQL schemes table is empty or missing gender segments,
+     and auto-seeds all schemes from `schemesData.js`.
+   - `getAllSchemes`: Returns all schemes without filtering (public catalog).
+   - `getRecommendations`: Fetches user profile, loads schemes, executes `filterEligibleSchemes()`, 
+     and returns matching schemes to the user.
+   - `explainScheme`: Re-verifies eligibility and calls Gemini AI to explain WHY the user matches.
+   - `simplifyScheme`: Calls Gemini AI to translate official jargon into plain English.
+
+8. `services/gemini.service.js`:
+   - Integrates with Google Gemini API (`models/gemini-flash-latest:generateContent`).
+   - Implements model candidate fallbacks (`gemini-flash-latest`, `gemini-3.5-flash`, etc.).
+   - Contains `explainMatch(profile, scheme)` and `simplifyDescription(scheme)`.
+
+9. `data/schemesData.js`:
+   - Master dataset of government schemes with structured JSON eligibility criteria.
+
+10. `database/schema.sql` & `database/seed.sql`:
+    - Raw SQL scripts for initializing database schemas and seeding scheme records.
+
+
+B. FRONTEND DIRECTORY (`frontend/`):
+------------------------------------
+1. `index.html`:
+   - HTML5 web page template that loads the Google Fonts and mounts `src/main.jsx`.
+
+2. `src/main.jsx`:
+   - React 18 DOM root initialization with `<BrowserRouter>` and `<AuthProvider>`.
+
+3. `src/App.jsx`:
+   - Central layout and routing registry.
+   - Configures public routes (`/`, `/login`, `/register`) and protected routes (`/dashboard`, 
+     `/profile`, `/recommendations`) wrapped with `<ProtectedRoute>`.
+
+4. `src/context/AuthContext.jsx`:
+   - React Context Provider managing authentication state across the entire app.
+   - Saves JWT in `localStorage`, keeps track of current user, and provides `login()`, 
+     `register()`, and `logout()` functions to all components.
+
+5. `src/api/axios.js`:
+   - Pre-configured Axios instance. Automatically adds `Authorization: Bearer <token>` to 
+     every outbound API call.
+
+6. `src/components/Navbar.jsx`:
+   - Responsive navigation bar with GovAssist AI branding, navigation links, login/register 
+     buttons for guests, and user dashboard/logout controls for authenticated users.
+
+7. `src/components/ProtectedRoute.jsx`:
+   - Security wrapper. If an unauthenticated user tries to access `/dashboard` or `/profile`, 
+     it automatically redirects them to `/login`.
+
+8. `src/pages/Landing.jsx`:
+   - Hero page presenting platform capabilities, benefits, sample AI matches, and steps.
+
+9. `src/pages/Register.jsx` & `src/pages/Login.jsx`:
+   - Clean, validated authentication forms with real-time error handling.
+
+10. `src/pages/Profile.jsx`:
+    - Citizen profile management form.
+    - Fields: Age, Gender (Male, Female, Transgender, Other), State, Occupation, Annual Income,
+      Education Level, Social Category.
+    - On submit, saves profile to MySQL and automatically navigates to Recommendations.
+
+11. `src/pages/Dashboard.jsx`:
+    - Summary home screen showing profile status chip, active filter summary, matched schemes 
+      count, and an explanation of the transparent eligibility model.
+
+12. `src/pages/Recommendations.jsx`:
+    - The flagship feature page.
+    - Shows the **Active Profile Matching Filters** bar at the top with quick edit link.
+    - Interactive Search Bar, Category Filter Dropdown, and Gender Filter Dropdown.
+    - Scheme Cards with eligibility tags (`👩 Female Only` / `👥 All Genders`, `💰 Max Income`, `🎂 Age Range`).
+    - Interactive Gemini AI buttons: "Why does this match me?" and "Simplify description".
+
+
+================================================================================
+6. COMPLETE REST API REFERENCE
+================================================================================
+
+| Method | Endpoint                    | Auth Required | Description                                                  |
+|--------|-----------------------------|---------------|--------------------------------------------------------------|
+| POST   | `/api/auth/register`        | No            | Register new citizen account (name, email, password)         |
+| POST   | `/api/auth/login`           | No            | Log in with email & password, returns signed JWT             |
+| GET    | `/api/auth/me`              | Yes (JWT)     | Get current logged-in user profile                           |
+| GET    | `/api/profile`              | Yes (JWT)     | Get citizen's demographic profile                            |
+| POST   | `/api/profile`              | Yes (JWT)     | Upsert citizen's profile (age, gender, state, income, etc.)   |
+| GET    | `/api/schemes`              | No            | Browse all schemes catalog (unfiltered)                      |
+| GET    | `/api/recommendations`      | Yes (JWT)     | Get strictly eligible schemes for logged-in citizen          |
+| POST   | `/api/schemes/:id/explain`  | Yes (JWT)     | Gemini AI explains why scheme matches citizen profile        |
+| POST   | `/api/schemes/:id/simplify` | No            | Gemini AI simplifies official description to plain English   |
+
+
+================================================================================
+7. END-TO-END FLOW (HOW IT ALL COMES TOGETHER)
+================================================================================
+1. Citizen registers or logs in via React (`/login` or `/register`).
+2. Express server issues a JWT token; React saves it in `localStorage`.
+3. Citizen fills out their details in `/profile`.
+4. Axios sends the profile data to `POST /api/profile`. Express validates inputs and saves 
+   to MySQL `profiles` table.
+5. React navigates to `/recommendations`.
+6. Express fetches the citizen's profile and all scheme JSON criteria from MySQL.
+7. `eligibility.js` runs deterministic rules:
+   - Is Age between min_age & max_age?
+   - Does scheme gender match user gender or is it 'All'?
+   - Is user income <= max_income?
+   - Does occupation match?
+   - Does social category match?
+8. Express returns only qualifying schemes.
+9. React displays the matching scheme cards along with active filter tags.
+10. Citizen clicks "Why does this match me?": Express re-verifies eligibility, calls Google 
+    Gemini API with the profile context, and streams back a friendly plain-English reason.
+
+================================================================================
+EOF - GovAssist AI Architecture Document
+================================================================================

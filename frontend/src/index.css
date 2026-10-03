@@ -1,0 +1,208 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-slate-50 text-slate-900 antialiased;
+
+   background-image: url('ashokstambh.png');
+   background-size:1500px 1050;
+   background-repeat: no-repeat; 
+  
+}
+.dashboard {
+ 
+
+  
+
+  
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-lg bg-brand-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-700 disabled:cursor-not-allowed disabled:opacity-60;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-5 py-2.5 text-sm font-semibold text-slate-700 shadow-sm transition hover:bg-slate-50;
+  }
+  .btn-apply {
+    @apply inline-flex items-center justify-center gap-1.5 rounded-lg bg-emerald-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-emerald-700 active:bg-emerald-800 disabled:cursor-not-allowed disabled:opacity-60;
+  }
+  .input-field {
+    @apply w-full rounded-lg border border-slate-300 px-4 py-2.5 text-sm text-slate-900 placeholder-slate-400 shadow-sm outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-100;
+  }
+  .card {
+    @apply rounded-2xl border border-slate-200 bg-white p-6 shadow-sm;
+  }
+  .label {
+    @apply mb-1.5 block text-sm font-medium text-slate-700;
+  }
+  @keyframes gradientText {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+  
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  #welcome-back {
+    background: linear-gradient(
+      90deg,
+      #4f46e5,
+      #5f9ef1,
+      #34279d,
+      #4f46e5
+    );
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientText 3s ease infinite;
+  }
+  #create-your-account {
+    background: linear-gradient(
+      90deg,
+      #4f46e5,
+      #5f9ef1,
+      #34279d,
+      #4f46e5
+    );
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientText 3s ease infinite;
+  }
+  /* =========================================
+   RECOMMENDATIONS PAGE ONLY
+   Animated background matching site theme
+   ========================================= */
+
+body.recommendations-page {
+  background-color: #f8f5f0 !important;
+
+  background-image:
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(174, 201, 220, 0.48) 0%,
+      rgba(174, 201, 220, 0.22) 22%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 85% 30%,
+      rgba(202, 198, 215, 0.40) 0%,
+      rgba(202, 198, 215, 0.18) 24%,
+      transparent 52%
+    ),
+    radial-gradient(
+      circle at 75% 85%,
+      rgba(255, 205, 190, 0.42) 0%,
+      rgba(255, 205, 190, 0.18) 25%,
+      transparent 55%
+    ),
+    radial-gradient(
+      circle at 20% 90%,
+      rgba(255, 220, 184, 0.35) 0%,
+      rgba(255, 220, 184, 0.14) 24%,
+      transparent 52%
+    ),
+    linear-gradient(
+      135deg,
+      #eef3f4 0%,
+      #f0eeee 25%,
+      #f5e9e7 48%,
+      #fae9df 70%,
+      #fff1df 100%
+    ) !important;
+
+  background-size:
+    180% 180%,
+    170% 170%,
+    180% 180%,
+    170% 170%,
+    100% 100%;
+
+  background-position:
+    0% 0%,
+    100% 0%,
+    100% 100%,
+    0% 100%,
+    center;
+
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  animation: recommendationsGradient 22s ease-in-out infinite alternate;
+}
+
+
+/* =========================================
+   SLOW ORGANIC GRADIENT MOVEMENT
+   ========================================= */
+
+@keyframes recommendationsGradient {
+  0% {
+    background-position:
+      0% 0%,
+      100% 0%,
+      100% 100%,
+      0% 100%,
+      center;
+  }
+
+  25% {
+    background-position:
+      12% 8%,
+      88% 12%,
+      90% 88%,
+      10% 92%,
+      center;
+  }
+
+  50% {
+    background-position:
+      20% 15%,
+      80% 5%,
+      80% 80%,
+      20% 85%,
+      center;
+  }
+
+  75% {
+    background-position:
+      8% 18%,
+      92% 18%,
+      88% 92%,
+      12% 82%,
+      center;
+  }
+
+  100% {
+    background-position:
+      0% 0%,
+      100% 0%,
+      100% 100%,
+      0% 100%,
+      center;
+  }
+}
+
+
+/* =========================================
+   ACCESSIBILITY
+   ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  body.recommendations-page {
+    animation: none;
+  }
+}
+}

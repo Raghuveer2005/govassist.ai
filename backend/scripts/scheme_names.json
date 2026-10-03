@@ -1,0 +1,1502 @@
+[
+  {
+    "id": 1,
+    "name": "Ayushman Bharat – PM-JAY",
+    "category": "Healthcare"
+  },
+  {
+    "id": 2,
+    "name": "Pradhan Mantri Bhartiya Janaushadhi Pariyojana (PMBJP)",
+    "category": "Healthcare"
+  },
+  {
+    "id": 3,
+    "name": "National Health Mission (NHM) Free Diagnostic Service",
+    "category": "Healthcare"
+  },
+  {
+    "id": 4,
+    "name": "Pradhan Mantri National Dialysis Programme (PMNDP)",
+    "category": "Healthcare"
+  },
+  {
+    "id": 5,
+    "name": "Rashtriya Arogya Nidhi (RAN)",
+    "category": "Healthcare"
+  },
+  {
+    "id": 6,
+    "name": "Health Minister's Cancer Patient Fund (HMCPF)",
+    "category": "Healthcare"
+  },
+  {
+    "id": 7,
+    "name": "National Programme for Prevention and Control of Cancer, Diabetes, CVD and Stroke (NPCDCS)",
+    "category": "Healthcare"
+  },
+  {
+    "id": 8,
+    "name": "National Tuberculosis Elimination Programme (NTEP) – Ni-kshay Poshan Yojana",
+    "category": "Healthcare"
+  },
+  {
+    "id": 9,
+    "name": "Mission Indradhanush (Universal Immunization)",
+    "category": "Healthcare"
+  },
+  {
+    "id": 10,
+    "name": "Janani Shishu Suraksha Karyakaram (JSSK)",
+    "category": "Healthcare"
+  },
+  {
+    "id": 11,
+    "name": "Janani Suraksha Yojana (JSY)",
+    "category": "Healthcare"
+  },
+  {
+    "id": 12,
+    "name": "Ayushman Bharat Digital Mission (ABHA)",
+    "category": "Healthcare"
+  },
+  {
+    "id": 13,
+    "name": "Chief Minister Comprehensive Health Insurance Scheme (CMCHIS – Tamil Nadu)",
+    "category": "Healthcare"
+  },
+  {
+    "id": 14,
+    "name": "Mahatma Jyotirao Phule Jan Arogya Yojana (MJPJAY – Maharashtra)",
+    "category": "Healthcare"
+  },
+  {
+    "id": 15,
+    "name": "Mukhyamantri Amrutum Yojana (MAA – Gujarat)",
+    "category": "Healthcare"
+  },
+  {
+    "id": 16,
+    "name": "Dr. YSR Aarogyasri Scheme (Andhra Pradesh)",
+    "category": "Healthcare"
+  },
+  {
+    "id": 17,
+    "name": "Arogya Karnataka Scheme",
+    "category": "Healthcare"
+  },
+  {
+    "id": 18,
+    "name": "Swasthya Sathi Scheme (West Bengal)",
+    "category": "Healthcare"
+  },
+  {
+    "id": 19,
+    "name": "Biju Swasthya Kalyan Yojana (BSKY – Odisha)",
+    "category": "Healthcare"
+  },
+  {
+    "id": 20,
+    "name": "Mukhyamantri Chiranjeevi Swasthya Bima Yojana (Rajasthan)",
+    "category": "Healthcare"
+  },
+  {
+    "id": 21,
+    "name": "Karunya Health Scheme (KASP – Kerala)",
+    "category": "Healthcare"
+  },
+  {
+    "id": 22,
+    "name": "Chief Minister Health Insurance Scheme (CMHIS – Nagaland)",
+    "category": "Healthcare"
+  },
+  {
+    "id": 23,
+    "name": "Ayushman Bharat Senior Citizen Health Coverage (Top-Up)",
+    "category": "Healthcare"
+  },
+  {
+    "id": 24,
+    "name": "PM Poshan Abhiyaan – Adolescent Anaemia Control",
+    "category": "Healthcare"
+  },
+  {
+    "id": 25,
+    "name": "National Leprosy Eradication Programme (Disability Prevention)",
+    "category": "Healthcare"
+  },
+  {
+    "id": 26,
+    "name": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)",
+    "category": "Agriculture"
+  },
+  {
+    "id": 27,
+    "name": "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+    "category": "Agriculture"
+  },
+  {
+    "id": 28,
+    "name": "Kisan Credit Card (KCC) Scheme",
+    "category": "Agriculture"
+  },
+  {
+    "id": 29,
+    "name": "Pradhan Mantri Krishi Sinchayee Yojana (PMKSY)",
+    "category": "Agriculture"
+  },
+  {
+    "id": 30,
+    "name": "Soil Health Card Scheme",
+    "category": "Agriculture"
+  },
+  {
+    "id": 31,
+    "name": "Paramparagat Krishi Vikas Yojana (PKVY)",
+    "category": "Agriculture"
+  },
+  {
+    "id": 32,
+    "name": "Sub-Mission on Agricultural Mechanization (SMAM)",
+    "category": "Agriculture"
+  },
+  {
+    "id": 33,
+    "name": "National Agriculture Market (e-NAM)",
+    "category": "Agriculture"
+  },
+  {
+    "id": 34,
+    "name": "Agriculture Infrastructure Fund (AIF)",
+    "category": "Agriculture"
+  },
+  {
+    "id": 35,
+    "name": "PM-KUSUM Component A & B (Solar Agriculture Pumps)",
+    "category": "Renewable Energy"
+  },
+  {
+    "id": 36,
+    "name": "Pradhan Mantri Matsya Sampada Yojana (PMMSY)",
+    "category": "Fisheries"
+  },
+  {
+    "id": 37,
+    "name": "Rashtriya Gokul Mission (RGM)",
+    "category": "Animal Husbandry"
+  },
+  {
+    "id": 38,
+    "name": "National Livestock Mission (NLM)",
+    "category": "Animal Husbandry"
+  },
+  {
+    "id": 39,
+    "name": "Dairy Processing and Infrastructure Development Fund (DIDF)",
+    "category": "Animal Husbandry"
+  },
+  {
+    "id": 40,
+    "name": "National Beekeeping and Honey Mission (NBHM)",
+    "category": "Agriculture"
+  },
+  {
+    "id": 41,
+    "name": "Rythu Bandhu Scheme (Telangana)",
+    "category": "Agriculture"
+  },
+  {
+    "id": 42,
+    "name": "Dr. YSR Rythu Bharosa (Andhra Pradesh)",
+    "category": "Agriculture"
+  },
+  {
+    "id": 43,
+    "name": "Krushak Assistance for Livelihood and Income Augmentation (KALIA – Odisha)",
+    "category": "Agriculture"
+  },
+  {
+    "id": 44,
+    "name": "Krishi Bhagya Scheme (Karnataka)",
+    "category": "Agriculture"
+  },
+  {
+    "id": 45,
+    "name": "Bhavantar Bhugtan Yojana (Madhya Pradesh)",
+    "category": "Agriculture"
+  },
+  {
+    "id": 46,
+    "name": "Chief Minister Solar Pump Scheme (Maharashtra)",
+    "category": "Agriculture"
+  },
+  {
+    "id": 47,
+    "name": "Mukhyamantri Krishi Ashirwad Yojana (Jharkhand)",
+    "category": "Agriculture"
+  },
+  {
+    "id": 48,
+    "name": "Kisan Kalyan Mission (Uttar Pradesh)",
+    "category": "Agriculture"
+  },
+  {
+    "id": 49,
+    "name": "Punjab Free Electricity for Agriculture Tube Wells",
+    "category": "Agriculture"
+  },
+  {
+    "id": 50,
+    "name": "Pashu Kisan Credit Card (Haryana)",
+    "category": "Animal Husbandry"
+  },
+  {
+    "id": 51,
+    "name": "Mission Organic Value Chain Development for NE Region (MOVCDNER)",
+    "category": "Agriculture"
+  },
+  {
+    "id": 52,
+    "name": "Sub-Mission on Seeds and Planting Material (SMSP)",
+    "category": "Agriculture"
+  },
+  {
+    "id": 53,
+    "name": "Agri-Clinics and Agri-Business Centres Scheme (ACABC)",
+    "category": "Agriculture"
+  },
+  {
+    "id": 54,
+    "name": "National Mission for Sustainable Agriculture (NMSA – Rainfed Area Development)",
+    "category": "Agriculture"
+  },
+  {
+    "id": 55,
+    "name": "Mission for Integrated Development of Horticulture (MIDH)",
+    "category": "Agriculture"
+  },
+  {
+    "id": 56,
+    "name": "National Means-cum-Merit Scholarship Scheme (NMMSS)",
+    "category": "Education"
+  },
+  {
+    "id": 57,
+    "name": "Central Sector Scheme of Scholarship for College and University Students",
+    "category": "Education"
+  },
+  {
+    "id": 58,
+    "name": "Post-Matric Scholarship for SC Students",
+    "category": "Education"
+  },
+  {
+    "id": 59,
+    "name": "Post-Matric Scholarship for ST Students",
+    "category": "Education"
+  },
+  {
+    "id": 60,
+    "name": "Post-Matric Scholarship for OBC Students",
+    "category": "Education"
+  },
+  {
+    "id": 61,
+    "name": "Top Class Education Scheme for SC Students",
+    "category": "Education"
+  },
+  {
+    "id": 62,
+    "name": "Top Class Education Scheme for ST Students",
+    "category": "Education"
+  },
+  {
+    "id": 63,
+    "name": "National Overseas Scholarship for SC/ST Candidates",
+    "category": "Education"
+  },
+  {
+    "id": 64,
+    "name": "Pragati Scholarship for Girl Students (Technical Degree/Diploma)",
+    "category": "Education"
+  },
+  {
+    "id": 65,
+    "name": "Saksham Scholarship for Divyang Students (Technical Education)",
+    "category": "Education"
+  },
+  {
+    "id": 66,
+    "name": "AICTE Swanath Scholarship Scheme",
+    "category": "Education"
+  },
+  {
+    "id": 67,
+    "name": "Prime Minister's Research Fellowship (PMRF)",
+    "category": "Education"
+  },
+  {
+    "id": 68,
+    "name": "INSPIRE Scholarship for Higher Education (SHE)",
+    "category": "Education"
+  },
+  {
+    "id": 69,
+    "name": "Kishore Vaigyanik Protsahan Yojana (KVPY / IAT Fellowship)",
+    "category": "Education"
+  },
+  {
+    "id": 70,
+    "name": "Free Coaching Scheme for SC and OBC Students",
+    "category": "Education"
+  },
+  {
+    "id": 71,
+    "name": "Begum Hazrat Mahal National Scholarship for Minority Girls",
+    "category": "Education"
+  },
+  {
+    "id": 72,
+    "name": "Pre-Matric Scholarship for SC Students",
+    "category": "Education"
+  },
+  {
+    "id": 73,
+    "name": "Pre-Matric Scholarship for ST Students",
+    "category": "Education"
+  },
+  {
+    "id": 74,
+    "name": "Padho Pardesh – Education Loan Interest Subsidy",
+    "category": "Education"
+  },
+  {
+    "id": 75,
+    "name": "Central Sector Interest Subsidy (CSIS) on Education Loans",
+    "category": "Education"
+  },
+  {
+    "id": 76,
+    "name": "Kanyashree Prakalpa (K1 & K2 – West Bengal)",
+    "category": "Education"
+  },
+  {
+    "id": 77,
+    "name": "Mukhyamantri Medhavi Vidyarthi Yojana (MMVY – Madhya Pradesh)",
+    "category": "Education"
+  },
+  {
+    "id": 78,
+    "name": "Mukhyamantri Kanya Utthan Yojana (Bihar)",
+    "category": "Education"
+  },
+  {
+    "id": 79,
+    "name": "Jagananna Vidya Deevena (Andhra Pradesh)",
+    "category": "Education"
+  },
+  {
+    "id": 80,
+    "name": "Jagananna Vasathi Deevena (Andhra Pradesh)",
+    "category": "Education"
+  },
+  {
+    "id": 81,
+    "name": "Moovalur Ramamirtham Ammaiyar Pudhumai Penn Scheme (Tamil Nadu)",
+    "category": "Education"
+  },
+  {
+    "id": 82,
+    "name": "Tamil Nadu Naan Mudhalvan Scheme",
+    "category": "Education"
+  },
+  {
+    "id": 83,
+    "name": "Gargi Puraskar Yojana (Rajasthan)",
+    "category": "Education"
+  },
+  {
+    "id": 84,
+    "name": "Chief Minister's Super 100 Scheme (Haryana)",
+    "category": "Education"
+  },
+  {
+    "id": 85,
+    "name": "Rajarshi Chhatrapati Shahu Maharaj Shikshan Shulkh Shishyavrutti (Maharashtra)",
+    "category": "Education"
+  },
+  {
+    "id": 86,
+    "name": "Pradhan Mantri Matru Vandana Yojana (PMMVY)",
+    "category": "Women Welfare"
+  },
+  {
+    "id": 87,
+    "name": "Beti Bachao Beti Padhao (BBBP)",
+    "category": "Women Welfare"
+  },
+  {
+    "id": 88,
+    "name": "Sukanya Samriddhi Yojana (SSY)",
+    "category": "Women Welfare"
+  },
+  {
+    "id": 89,
+    "name": "Mission Shakti – Sambal (Safety & Security)",
+    "category": "Women Welfare"
+  },
+  {
+    "id": 90,
+    "name": "Mission Shakti – Samarthya (Empowerment & Child Care)",
+    "category": "Women Welfare"
+  },
+  {
+    "id": 91,
+    "name": "Pradhan Mantri Ujjwala Yojana (PMUY)",
+    "category": "Women Welfare"
+  },
+  {
+    "id": 92,
+    "name": "Mahila E-Haat (Digital Entrepreneurship)",
+    "category": "Women Welfare"
+  },
+  {
+    "id": 93,
+    "name": "Support to Training and Employment Programme for Women (STEP)",
+    "category": "Women Welfare"
+  },
+  {
+    "id": 94,
+    "name": "Ladli Behna Yojana (Madhya Pradesh)",
+    "category": "Women Welfare"
+  },
+  {
+    "id": 95,
+    "name": "Mukhyamantri Majhi Ladki Bahin Yojana (Maharashtra)",
+    "category": "Women Welfare"
+  },
+  {
+    "id": 96,
+    "name": "Gruha Lakshmi Scheme (Karnataka)",
+    "category": "Women Welfare"
+  },
+  {
+    "id": 97,
+    "name": "Gruha Lakshmi Scheme (Telangana)",
+    "category": "Housing"
+  },
+  {
+    "id": 98,
+    "name": "Lakshmir Bhandar Scheme (West Bengal)",
+    "category": "Women Welfare"
+  },
+  {
+    "id": 99,
+    "name": "Mukhyamantri Kanya Sumangala Yojana (Uttar Pradesh)",
+    "category": "Women Welfare"
+  },
+  {
+    "id": 100,
+    "name": "Mahila Samman Savings Certificate (MSSC)",
+    "category": "Women Welfare"
+  },
+  {
+    "id": 101,
+    "name": "Mahila Samridhi Yojana (NCFDC / NBCFDC)",
+    "category": "Women Welfare"
+  },
+  {
+    "id": 102,
+    "name": "Dena Shakti / Cent Kalyani Women Enterprise Loan",
+    "category": "Business & Employment"
+  },
+  {
+    "id": 103,
+    "name": "Udyogini Scheme for Women Entrepreneurs (Karnataka)",
+    "category": "Business & Employment"
+  },
+  {
+    "id": 104,
+    "name": "Kalyana Lakshmi / Shaadi Mubarak Scheme (Telangana)",
+    "category": "Women Welfare"
+  },
+  {
+    "id": 105,
+    "name": "Dr. Muthulakshmi Reddy Maternity Benefit Scheme (Tamil Nadu)",
+    "category": "Women Welfare"
+  },
+  {
+    "id": 106,
+    "name": "Pradhan Mantri Mudra Yojana – Shishu Loan",
+    "category": "Business & Employment"
+  },
+  {
+    "id": 107,
+    "name": "Pradhan Mantri Mudra Yojana – Kishor Loan",
+    "category": "Business & Employment"
+  },
+  {
+    "id": 108,
+    "name": "Pradhan Mantri Mudra Yojana – Tarun Loan",
+    "category": "Business & Employment"
+  },
+  {
+    "id": 109,
+    "name": "PM SVANidhi Scheme (Micro-Credit for Street Vendors)",
+    "category": "Business & Employment"
+  },
+  {
+    "id": 110,
+    "name": "PM Vishwakarma Scheme",
+    "category": "Skills & Business"
+  },
+  {
+    "id": 111,
+    "name": "Prime Minister's Employment Generation Programme (PMEGP)",
+    "category": "Business & Employment"
+  },
+  {
+    "id": 112,
+    "name": "Stand-Up India Scheme",
+    "category": "Entrepreneurship"
+  },
+  {
+    "id": 113,
+    "name": "Startup India Initiative",
+    "category": "Entrepreneurship"
+  },
+  {
+    "id": 114,
+    "name": "Credit Guarantee Fund Trust for Micro & Small Enterprises (CGTMSE)",
+    "category": "Business & Employment"
+  },
+  {
+    "id": 115,
+    "name": "Scheme of Fund for Regeneration of Traditional Industries (SFURTI)",
+    "category": "Business & Employment"
+  },
+  {
+    "id": 116,
+    "name": "ASPIRE Scheme (Livelihood Business Incubators)",
+    "category": "Entrepreneurship"
+  },
+  {
+    "id": 117,
+    "name": "MSME Champions (MSME Sustainable ZED Certification)",
+    "category": "Business & Employment"
+  },
+  {
+    "id": 118,
+    "name": "Coir Vikas Yojana (CVY)",
+    "category": "Business & Employment"
+  },
+  {
+    "id": 119,
+    "name": "National Small Industries Corporation (NSIC) Raw Material Assistance",
+    "category": "Business & Employment"
+  },
+  {
+    "id": 120,
+    "name": "National SC-ST Hub (NSSH)",
+    "category": "Entrepreneurship"
+  },
+  {
+    "id": 121,
+    "name": "Chief Minister's Employment Generation Programme (CMEGP – Maharashtra)",
+    "category": "Business & Employment"
+  },
+  {
+    "id": 122,
+    "name": "Mukhyamantri Yuva Swarojgar Yojana (Uttar Pradesh)",
+    "category": "Business & Employment"
+  },
+  {
+    "id": 123,
+    "name": "Mukhyamantri Yuva Udyami Yojana (Madhya Pradesh)",
+    "category": "Business & Employment"
+  },
+  {
+    "id": 124,
+    "name": "T-PRIDE (Telangana Program for SC/ST Entrepreneurship)",
+    "category": "Entrepreneurship"
+  },
+  {
+    "id": 125,
+    "name": "Unemployed Youth Employment Generation Programme (UYEGP – Tamil Nadu)",
+    "category": "Business & Employment"
+  },
+  {
+    "id": 126,
+    "name": "Pradhan Mantri Awas Yojana – Gramin (PMAY-G)",
+    "category": "Housing"
+  },
+  {
+    "id": 127,
+    "name": "Pradhan Mantri Awas Yojana – Urban (PMAY-U)",
+    "category": "Housing"
+  },
+  {
+    "id": 128,
+    "name": "Swachh Bharat Mission – Gramin (Individual Household Latrine)",
+    "category": "Sanitation"
+  },
+  {
+    "id": 129,
+    "name": "Jal Jeevan Mission (Har Ghar Jal)",
+    "category": "Infrastructure"
+  },
+  {
+    "id": 130,
+    "name": "PM Surya Ghar – Muft Bijli Yojana (Rooftop Solar)",
+    "category": "Renewable Energy"
+  },
+  {
+    "id": 131,
+    "name": "Pradhan Mantri Gram Sadak Yojana (PMGSY)",
+    "category": "Infrastructure"
+  },
+  {
+    "id": 132,
+    "name": "Affordable Rental Housing Complexes (ARHCs)",
+    "category": "Housing"
+  },
+  {
+    "id": 133,
+    "name": "Kalaignar Kanavu Illam Scheme (Tamil Nadu)",
+    "category": "Housing"
+  },
+  {
+    "id": 134,
+    "name": "Mukhyamantri Awas Yojana – Gramin (Uttar Pradesh)",
+    "category": "Housing"
+  },
+  {
+    "id": 135,
+    "name": "Ghar Kul Yojana – Shabari Awas (Maharashtra)",
+    "category": "Housing"
+  },
+  {
+    "id": 136,
+    "name": "Atal Pension Yojana (APY)",
+    "category": "Pension & Social Security"
+  },
+  {
+    "id": 137,
+    "name": "Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)",
+    "category": "Life Insurance"
+  },
+  {
+    "id": 138,
+    "name": "Pradhan Mantri Suraksha Bima Yojana (PMSBY)",
+    "category": "Accident Insurance"
+  },
+  {
+    "id": 139,
+    "name": "Pradhan Mantri Shram Yogi Maandhan (PM-SYM)",
+    "category": "Pension & Social Security"
+  },
+  {
+    "id": 140,
+    "name": "National Social Assistance Programme – IGNOAPS (Senior Pension)",
+    "category": "Pension & Social Security"
+  },
+  {
+    "id": 141,
+    "name": "National Social Assistance Programme – IGNWPS (Widow Pension)",
+    "category": "Pension & Social Security"
+  },
+  {
+    "id": 142,
+    "name": "National Social Assistance Programme – IGNDPS (Disability Pension)",
+    "category": "Disability Welfare"
+  },
+  {
+    "id": 143,
+    "name": "Atal Vayo Abhyuday Yojana (AVYAY – Senior Assisted Living)",
+    "category": "Senior Welfare"
+  },
+  {
+    "id": 144,
+    "name": "Rashtriya Vayoshri Yojana",
+    "category": "Senior & Disability Welfare"
+  },
+  {
+    "id": 145,
+    "name": "Assistance to Persons with Disabilities for Purchase/Fitting of Aids (ADIP)",
+    "category": "Disability Welfare"
+  },
+  {
+    "id": 146,
+    "name": "National Divyangjan Finance and Development Corporation (NDFDC Loan)",
+    "category": "Disability Welfare"
+  },
+  {
+    "id": 147,
+    "name": "Aasara Pension Scheme (Telangana)",
+    "category": "Pension & Social Security"
+  },
+  {
+    "id": 148,
+    "name": "YSR Pension Kanuka (Andhra Pradesh)",
+    "category": "Pension & Social Security"
+  },
+  {
+    "id": 149,
+    "name": "Sanjay Gandhi Niradhar Anudan Yojana (Maharashtra)",
+    "category": "Pension & Social Security"
+  },
+  {
+    "id": 150,
+    "name": "Old Age Samman Allowance (Haryana)",
+    "category": "Senior Welfare"
+  },
+  {
+    "id": 151,
+    "name": "Madhu Babu Pension Yojana (Odisha)",
+    "category": "Pension & Social Security"
+  },
+  {
+    "id": 152,
+    "name": "Deendayal Disabled Rehabilitation Scheme (DDRS)",
+    "category": "Disability Welfare"
+  },
+  {
+    "id": 153,
+    "name": "PM-JANMAN (Pradhan Mantri Janjati Adivasi Nyaya Maha Abhiyan)",
+    "category": "Minority & Tribal Welfare"
+  },
+  {
+    "id": 154,
+    "name": "Pradhan Mantri Anusuchit Jaati Abhyuday Yojana (PM-AJAY)",
+    "category": "Social & Economic Development"
+  },
+  {
+    "id": 155,
+    "name": "Pradhan Mantri Virasat Ka Samvardhan (PM VIKAS)",
+    "category": "Skills & Livelihood"
+  },
+  {
+    "id": 156,
+    "name": "National Apprenticeship Promotion Scheme (NAPS)",
+    "category": "Skill Development"
+  },
+  {
+    "id": 157,
+    "name": "Pradhan Mantri Kaushal Vikas Yojana 4.0 (PMKVY)",
+    "category": "Skill Development"
+  },
+  {
+    "id": 158,
+    "name": "Deen Dayal Upadhyaya Grameen Kaushalya Yojana (DDU-GKY)",
+    "category": "Skill Development"
+  },
+  {
+    "id": 159,
+    "name": "Mahatma Gandhi National Rural Employment Guarantee Act (MGNREGA)",
+    "category": "Employment"
+  },
+  {
+    "id": 160,
+    "name": "Deendayal Antyodaya Yojana – NULM (Urban Livelihoods)",
+    "category": "Livelihoods"
+  },
+  {
+    "id": 161,
+    "name": "National Career Service (NCS Portal)",
+    "category": "Employment"
+  },
+  {
+    "id": 162,
+    "name": "e-Shram Portal (National Database of Unorganised Workers)",
+    "category": "Social Security"
+  },
+  {
+    "id": 163,
+    "name": "PM-DAKSH (Pradhan Mantri Dakshta Aur Kushalta Sampanna Hitgrahi)",
+    "category": "Skill Development"
+  },
+  {
+    "id": 164,
+    "name": "Van Dhan Vikas Yojana (TRIFED)",
+    "category": "Minority & Tribal Welfare"
+  },
+  {
+    "id": 165,
+    "name": "Unique Disability ID (UDID) Card Welfare Benefits",
+    "category": "Disability Welfare"
+  },
+  {
+    "id": 166,
+    "name": "Kanya Vidya Dhan Yojana",
+    "category": "Education"
+  },
+  {
+    "id": 167,
+    "name": "Mukhyamantri Abhyudaya Yojana (UP Free UPSC/JEE Coaching)",
+    "category": "Education"
+  },
+  {
+    "id": 168,
+    "name": "UP Gopalak Yojana (Dairy Farming Subsidy)",
+    "category": "Animal Husbandry"
+  },
+  {
+    "id": 169,
+    "name": "UP Bhagya Laxmi Yojana",
+    "category": "Women Welfare"
+  },
+  {
+    "id": 170,
+    "name": "UP Shadi Anudan Yojana",
+    "category": "Social Security"
+  },
+  {
+    "id": 171,
+    "name": "Swami Vivekananda Yuva Sashaktikaran Yojana (UP Free Smartphone/Tablet)",
+    "category": "Education"
+  },
+  {
+    "id": 172,
+    "name": "Sant Ravidas Shiksha Sahayata Yojana (UP Construction Workers)",
+    "category": "Education"
+  },
+  {
+    "id": 173,
+    "name": "Maharashtra Asmita Yojana (Sanitary Napkin Subsidy)",
+    "category": "Women Welfare"
+  },
+  {
+    "id": 174,
+    "name": "Manodhairya Scheme (Maharashtra)",
+    "category": "Women Welfare"
+  },
+  {
+    "id": 175,
+    "name": "Balasaheb Thackeray Accident Insurance Scheme (Maharashtra)",
+    "category": "Healthcare"
+  },
+  {
+    "id": 176,
+    "name": "Dr. Babasaheb Ambedkar Swadhar Yojana (Maharashtra)",
+    "category": "Education"
+  },
+  {
+    "id": 177,
+    "name": "Maharashtra Shravanbal Seva Rajya Nivruttivetan Yojana",
+    "category": "Senior Welfare"
+  },
+  {
+    "id": 178,
+    "name": "Vidyasiri – Food and Accommodation Scheme (Karnataka)",
+    "category": "Education"
+  },
+  {
+    "id": 179,
+    "name": "Yuva Nidhi Scheme (Karnataka)",
+    "category": "Employment"
+  },
+  {
+    "id": 180,
+    "name": "Shakti Free Bus Travel Scheme for Women (Karnataka)",
+    "category": "Women Welfare"
+  },
+  {
+    "id": 181,
+    "name": "Chief Minister's Anila Bhagya Scheme (Karnataka)",
+    "category": "Energy & Women Welfare"
+  },
+  {
+    "id": 182,
+    "name": "Kalaignar Magalir Urimai Thittam (Tamil Nadu Women Basic Income)",
+    "category": "Women Welfare"
+  },
+  {
+    "id": 183,
+    "name": "Chief Minister's Breakfast Scheme (Tamil Nadu)",
+    "category": "Education"
+  },
+  {
+    "id": 184,
+    "name": "Tamil Nadu Amma Two Wheeler Scheme",
+    "category": "Women Welfare"
+  },
+  {
+    "id": 185,
+    "name": "YSR Cheyutha Scheme (Andhra Pradesh)",
+    "category": "Women Welfare"
+  },
+  {
+    "id": 186,
+    "name": "YSR Kapu Nestham (Andhra Pradesh)",
+    "category": "Women Welfare"
+  },
+  {
+    "id": 187,
+    "name": "YSR Nethanna Nestham (Weaver Assistance – AP)",
+    "category": "Business & Employment"
+  },
+  {
+    "id": 188,
+    "name": "YSR Matsyakara Bharosa (Fishermen Subsidy – AP)",
+    "category": "Fisheries"
+  },
+  {
+    "id": 189,
+    "name": "Arogya Lakshmi (Telangana Nutrition Scheme)",
+    "category": "Healthcare"
+  },
+  {
+    "id": 190,
+    "name": "KCR Kit Scheme (Telangana)",
+    "category": "Healthcare"
+  },
+  {
+    "id": 191,
+    "name": "Sabuj Sathi (Bicycle Distribution Scheme – West Bengal)",
+    "category": "Education"
+  },
+  {
+    "id": 192,
+    "name": "Gatidhara Scheme (Commercial Vehicle Subsidy – West Bengal)",
+    "category": "Business & Employment"
+  },
+  {
+    "id": 193,
+    "name": "Swami Vivekananda Merit-cum-Means Scholarship (SVMCM – West Bengal)",
+    "category": "Education"
+  },
+  {
+    "id": 194,
+    "name": "Rupashree Prakalpa (West Bengal Marriage Grant)",
+    "category": "Social Security"
+  },
+  {
+    "id": 195,
+    "name": "Chiranjeevi Swasthya Bima Yojana – Cancer / Heart Surgery Top-Up (Rajasthan)",
+    "category": "Healthcare"
+  },
+  {
+    "id": 196,
+    "name": "Indira Gandhi Urban Employment Guarantee Scheme (IRGY – Rajasthan)",
+    "category": "Employment"
+  },
+  {
+    "id": 197,
+    "name": "Indira Gandhi Matritva Poshan Yojana (Rajasthan)",
+    "category": "Women Welfare"
+  },
+  {
+    "id": 198,
+    "name": "Mukhyamantri Anuprati Coaching Yojana (Rajasthan)",
+    "category": "Education"
+  },
+  {
+    "id": 199,
+    "name": "Mukhyamantri Vridhjan Pension Yojana (Bihar)",
+    "category": "Senior Welfare"
+  },
+  {
+    "id": 200,
+    "name": "Bihar Student Credit Card Scheme (MNSSBY)",
+    "category": "Education"
+  },
+  {
+    "id": 201,
+    "name": "Mukhyamantri Udyami Yojana (Bihar – SC/ST/EBC/Women/Youth)",
+    "category": "Entrepreneurship"
+  },
+  {
+    "id": 202,
+    "name": "Har Ghar Nal Ka Jal Scheme (Bihar)",
+    "category": "Infrastructure"
+  },
+  {
+    "id": 203,
+    "name": "Biju Yuva Sashaktikaran Yojana (Free Laptop – Odisha)",
+    "category": "Education"
+  },
+  {
+    "id": 204,
+    "name": "Mission Shakti Loan Scheme (Odisha – 0% Interest)",
+    "category": "Women Welfare"
+  },
+  {
+    "id": 205,
+    "name": "Mukhyamantri Vayoshri Yojana (Maharashtra Cash Incentive)",
+    "category": "Senior Welfare"
+  },
+  {
+    "id": 206,
+    "name": "Chief Minister's Solar Street Lighting Scheme (Bihar)",
+    "category": "Renewable Energy"
+  },
+  {
+    "id": 207,
+    "name": "Mukhya Mantri Seva Sankalp (Himachal Pradesh Citizen Grievance)",
+    "category": "Social Security"
+  },
+  {
+    "id": 208,
+    "name": "Himcare Scheme (Himachal Healthcare)",
+    "category": "Healthcare"
+  },
+  {
+    "id": 209,
+    "name": "Mukhyamantri Swavalamban Yojana (Himachal Pradesh)",
+    "category": "Entrepreneurship"
+  },
+  {
+    "id": 210,
+    "name": "Atal Shresth Shahar Yojana (Himachal Pradesh)",
+    "category": "Infrastructure"
+  },
+  {
+    "id": 211,
+    "name": "Mera Bill Mera Adhikaar (Invoice Incentive Scheme)",
+    "category": "Financial Inclusion"
+  },
+  {
+    "id": 212,
+    "name": "PM SHRI Schools Scheme (PM Schools for Rising India)",
+    "category": "Education"
+  },
+  {
+    "id": 213,
+    "name": "PM Young Achievers Scholarship Award Scheme (PM-YASASVI)",
+    "category": "Education"
+  },
+  {
+    "id": 214,
+    "name": "National Means Scholarship for ITI Apprentices",
+    "category": "Skill Development"
+  },
+  {
+    "id": 215,
+    "name": "National Cold Storage Subsidy Initiative",
+    "category": "Agriculture"
+  },
+  {
+    "id": 216,
+    "name": "Arunachal Pradesh Higher Secondary Merit Award Scheme",
+    "category": "Education"
+  },
+  {
+    "id": 217,
+    "name": "Assam Dialysis Patient Transport Aid Scheme",
+    "category": "Healthcare"
+  },
+  {
+    "id": 218,
+    "name": "National Handicraft Artisan Grant Initiative",
+    "category": "Women Welfare"
+  },
+  {
+    "id": 219,
+    "name": "Chhattisgarh Leather Craft Enterprise Subsidy Scheme",
+    "category": "Business & Employment"
+  },
+  {
+    "id": 220,
+    "name": "Delhi Solar Water Heater Subsidy Scheme",
+    "category": "Renewable Energy"
+  },
+  {
+    "id": 221,
+    "name": "National Deep Sea Fishing Vessel Subsidy Initiative",
+    "category": "Fisheries & Marine"
+  },
+  {
+    "id": 222,
+    "name": "Gujarat Motorized Tricycle Free Grant Scheme",
+    "category": "Disability Welfare"
+  },
+  {
+    "id": 223,
+    "name": "Haryana Tribal Forest Honey Processing Aid Scheme",
+    "category": "Minority & Tribal Welfare"
+  },
+  {
+    "id": 224,
+    "name": "National Rural Village Library Grant Initiative",
+    "category": "Rural Development"
+  },
+  {
+    "id": 225,
+    "name": "Jharkhand Senior Citizen Recreational Centre Scheme",
+    "category": "Senior Welfare"
+  },
+  {
+    "id": 226,
+    "name": "Karnataka National Medalist Youth Pension Scheme",
+    "category": "Sports & Youth"
+  },
+  {
+    "id": 227,
+    "name": "National Construction Worker Marriage Grant Initiative",
+    "category": "Social Security"
+  },
+  {
+    "id": 228,
+    "name": "Madhya Pradesh Drone Pilot Certified Training Scheme",
+    "category": "Skill Development"
+  },
+  {
+    "id": 229,
+    "name": "Maharashtra Drip Irrigation Incentive Scheme",
+    "category": "Agriculture"
+  },
+  {
+    "id": 230,
+    "name": "National Polytechnic Diploma Grant Initiative",
+    "category": "Education"
+  },
+  {
+    "id": 231,
+    "name": "Meghalaya Sickle Cell Anaemia Care Grant Scheme",
+    "category": "Healthcare"
+  },
+  {
+    "id": 232,
+    "name": "Mizoram Sanitary Hygiene Subsidy Scheme",
+    "category": "Women Welfare"
+  },
+  {
+    "id": 233,
+    "name": "National Food Processing Micro-Unit Aid Initiative",
+    "category": "Business & Employment"
+  },
+  {
+    "id": 234,
+    "name": "Odisha Biomass Pellet Plant Grant Scheme",
+    "category": "Renewable Energy"
+  },
+  {
+    "id": 235,
+    "name": "Punjab Shrimp Aquaculture Pond Grant Scheme",
+    "category": "Fisheries & Marine"
+  },
+  {
+    "id": 236,
+    "name": "National Braille Smart Reader Grant Initiative",
+    "category": "Disability Welfare"
+  },
+  {
+    "id": 237,
+    "name": "Sikkim Minority Women Leadership Training Scheme",
+    "category": "Minority & Tribal Welfare"
+  },
+  {
+    "id": 238,
+    "name": "Tamil Nadu Panchayat Community Water Filter Scheme",
+    "category": "Rural Development"
+  },
+  {
+    "id": 239,
+    "name": "National Old Age Home Health Clinic Aid Initiative",
+    "category": "Senior Welfare"
+  },
+  {
+    "id": 240,
+    "name": "Tripura Rural Wrestling Akhada Modernization Scheme",
+    "category": "Sports & Youth"
+  },
+  {
+    "id": 241,
+    "name": "Uttar Pradesh Unorganized Worker Funeral Assistance Scheme",
+    "category": "Social Security"
+  },
+  {
+    "id": 242,
+    "name": "National Solar Panel Technician Certification Initiative",
+    "category": "Skill Development"
+  },
+  {
+    "id": 243,
+    "name": "West Bengal Organic Fertilizer Subsidy Scheme",
+    "category": "Agriculture"
+  },
+  {
+    "id": 244,
+    "name": "Andhra Pradesh Tribal Girls Boarding Scholarship Scheme",
+    "category": "Education"
+  },
+  {
+    "id": 245,
+    "name": "National Hearing Aid Device Subsidy Initiative",
+    "category": "Healthcare"
+  },
+  {
+    "id": 246,
+    "name": "Assam Widow Remarriage Financial Grant Scheme",
+    "category": "Women Welfare"
+  },
+  {
+    "id": 247,
+    "name": "Bihar Green Enterprise Loan Incentive Scheme",
+    "category": "Business & Employment"
+  },
+  {
+    "id": 248,
+    "name": "National Small Hydro Power Incentive Initiative",
+    "category": "Renewable Energy"
+  },
+  {
+    "id": 249,
+    "name": "Delhi Insulated Ice Box Subsidy Scheme",
+    "category": "Fisheries & Marine"
+  },
+  {
+    "id": 250,
+    "name": "Goa Prosthetic Limb Fitting Grant Scheme",
+    "category": "Disability Welfare"
+  },
+  {
+    "id": 251,
+    "name": "National Heritage Handloom Preservation Grant Initiative",
+    "category": "Minority & Tribal Welfare"
+  },
+  {
+    "id": 252,
+    "name": "Haryana Village Compost Pit Construction Scheme",
+    "category": "Rural Development"
+  },
+  {
+    "id": 253,
+    "name": "Himachal Pradesh Elderly Medical Home Visit Service Scheme",
+    "category": "Senior Welfare"
+  },
+  {
+    "id": 254,
+    "name": "National Khelo India Academy Scholarship Initiative",
+    "category": "Sports & Youth"
+  },
+  {
+    "id": 255,
+    "name": "Karnataka Destitute Orphan Educational Grant Scheme",
+    "category": "Social Security"
+  },
+  {
+    "id": 256,
+    "name": "Kerala Electric Vehicle EV Mechanic Course Scheme",
+    "category": "Skill Development"
+  },
+  {
+    "id": 257,
+    "name": "National Bio-Gas Plant Grant Initiative",
+    "category": "Agriculture"
+  },
+  {
+    "id": 258,
+    "name": "Maharashtra Sports Excellence Student Grant Scheme",
+    "category": "Education"
+  },
+  {
+    "id": 259,
+    "name": "Manipur Maternity Nutrition Basket Scheme",
+    "category": "Healthcare"
+  },
+  {
+    "id": 260,
+    "name": "National Women Taxi Driver Vehicle Subsidy Initiative",
+    "category": "Women Welfare"
+  },
+  {
+    "id": 261,
+    "name": "Mizoram Handloom Weaver Powerloom Subsidy Scheme",
+    "category": "Business & Employment"
+  },
+  {
+    "id": 262,
+    "name": "Nagaland Electric Auto Charging Subsidy Scheme",
+    "category": "Renewable Energy"
+  },
+  {
+    "id": 263,
+    "name": "National Fishermen Safety GPS Beacon Aid Initiative",
+    "category": "Fisheries & Marine"
+  },
+  {
+    "id": 264,
+    "name": "Punjab Deaf Student Communication Aid Scheme",
+    "category": "Disability Welfare"
+  },
+  {
+    "id": 265,
+    "name": "Rajasthan Tribal Youth Sports Talent Search Scheme",
+    "category": "Minority & Tribal Welfare"
+  },
+  {
+    "id": 266,
+    "name": "National Rural Youth Skill Hub Initiative",
+    "category": "Rural Development"
+  },
+  {
+    "id": 267,
+    "name": "Tamil Nadu Senior Citizen Transport Concession Scheme",
+    "category": "Senior Welfare"
+  },
+  {
+    "id": 268,
+    "name": "Telangana Athletics Equipment Subsidy Scheme",
+    "category": "Sports & Youth"
+  },
+  {
+    "id": 269,
+    "name": "National Migrant Worker Transit Hostel Aid Initiative",
+    "category": "Social Security"
+  },
+  {
+    "id": 270,
+    "name": "Uttar Pradesh Mobile Repairing Skill Training Scheme",
+    "category": "Skill Development"
+  },
+  {
+    "id": 271,
+    "name": "Uttarakhand Tractor Purchase Subsidy Scheme",
+    "category": "Agriculture"
+  },
+  {
+    "id": 272,
+    "name": "National Civil Services Prelims Clearing Reward Initiative",
+    "category": "Education"
+  },
+  {
+    "id": 273,
+    "name": "Andhra Pradesh Mental Health Counseling Support Scheme",
+    "category": "Healthcare"
+  },
+  {
+    "id": 274,
+    "name": "Arunachal Pradesh Sewing Machine Free Distribution Scheme",
+    "category": "Women Welfare"
+  },
+  {
+    "id": 275,
+    "name": "National Pottery Modernization Grant Initiative",
+    "category": "Business & Employment"
+  },
+  {
+    "id": 276,
+    "name": "Bihar Solar Dryer Agricultural Grant Scheme",
+    "category": "Renewable Energy"
+  },
+  {
+    "id": 277,
+    "name": "Chhattisgarh Fish Hatchery Construction Grant Scheme",
+    "category": "Fisheries & Marine"
+  },
+  {
+    "id": 278,
+    "name": "National Disability Marriage Incentive Initiative",
+    "category": "Disability Welfare"
+  },
+  {
+    "id": 279,
+    "name": "Goa Minority Community Hall Grant Scheme",
+    "category": "Minority & Tribal Welfare"
+  },
+  {
+    "id": 280,
+    "name": "Gujarat Gram Panchayat Digital Service Grant Scheme",
+    "category": "Rural Development"
+  },
+  {
+    "id": 281,
+    "name": "National Retired War Veteran Daughter Grant Initiative",
+    "category": "Senior Welfare"
+  },
+  {
+    "id": 282,
+    "name": "Himachal Pradesh Youth Club Sports Kit Distribution Scheme",
+    "category": "Sports & Youth"
+  },
+  {
+    "id": 283,
+    "name": "Jharkhand Sanitation Worker Safety Gear Kit Scheme",
+    "category": "Social Security"
+  },
+  {
+    "id": 284,
+    "name": "National Culinary & Baking Skill Course Initiative",
+    "category": "Skill Development"
+  },
+  {
+    "id": 285,
+    "name": "Kerala Silage Fodder Unit Aid Scheme",
+    "category": "Agriculture"
+  },
+  {
+    "id": 286,
+    "name": "Madhya Pradesh Foreign Language Career Grant Scheme",
+    "category": "Education"
+  },
+  {
+    "id": 287,
+    "name": "National Cleft Palate Free Surgery Initiative",
+    "category": "Healthcare"
+  },
+  {
+    "id": 288,
+    "name": "Manipur Women Retail Mart Loan Scheme",
+    "category": "Women Welfare"
+  },
+  {
+    "id": 289,
+    "name": "Meghalaya Khadi Spinners Assistance Scheme",
+    "category": "Business & Employment"
+  },
+  {
+    "id": 290,
+    "name": "National Mini-Grid Solar Power Unit Initiative",
+    "category": "Renewable Energy"
+  },
+  {
+    "id": 291,
+    "name": "Nagaland Seaweed Farming Livelihood Grant Scheme",
+    "category": "Fisheries & Marine"
+  },
+  {
+    "id": 292,
+    "name": "Odisha Special Vocational Skill Course Scheme",
+    "category": "Disability Welfare"
+  },
+  {
+    "id": 293,
+    "name": "National Scheduled Tribe Hostel Allowance Initiative",
+    "category": "Minority & Tribal Welfare"
+  },
+  {
+    "id": 294,
+    "name": "Rajasthan Village Haat Infrastructure Grant Scheme",
+    "category": "Rural Development"
+  },
+  {
+    "id": 295,
+    "name": "Sikkim Senior Caretaker Training Subsidy Scheme",
+    "category": "Senior Welfare"
+  },
+  {
+    "id": 296,
+    "name": "National State Games Traveling Grant Initiative",
+    "category": "Sports & Youth"
+  },
+  {
+    "id": 297,
+    "name": "Telangana Street Performer Folk Artist Pension Scheme",
+    "category": "Social Security"
+  },
+  {
+    "id": 298,
+    "name": "Tripura Organic Farming Field Certification Scheme",
+    "category": "Skill Development"
+  },
+  {
+    "id": 299,
+    "name": "National Millet Cultivation Incentive Initiative",
+    "category": "Agriculture"
+  },
+  {
+    "id": 300,
+    "name": "Uttarakhand Medical UG Tuition Waiver Scheme",
+    "category": "Education"
+  }
+]
