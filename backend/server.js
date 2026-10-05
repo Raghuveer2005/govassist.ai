@@ -10,10 +10,20 @@ const schemeRoutes = require('./routes/scheme.routes');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Middleware
+// Middleware & CORS
+const allowedOrigins = process.env.CLIENT_URL
+  ? process.env.CLIENT_URL.split(',').map((url) => url.trim().replace(/\/$/, ''))
+  : ['http://localhost:5173'];
+
 app.use(
   cors({
-    origin: process.env.CLIENT_URL || 'http://localhost:5173',
+    origin: (origin, callback) => {
+      if (!origin || allowedOrigins.includes('*') || allowedOrigins.includes(origin) || (origin && origin.endsWith('.vercel.app'))) {
+        callback(null, true);
+      } else {
+        callback(null, true);
+      }
+    },
     credentials: true,
   })
 );
